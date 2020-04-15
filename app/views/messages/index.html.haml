@@ -1,0 +1,24 @@
+.wrapper
+  = render "side_bar"
+  = render "main_chat"
+
+!!!
+%html{lang: "ja"}
+%link(rel="stylesheet" href="_messages.scss")
+
+  %head
+    %meta{charset: "utf-8"}
+
+  %body
+
+    .side-bar
+      .side-bar__user-name
+        .top-items
+          .top-items__name masa
+          .top-items__icon
+      .side-bar__group-list
+
+    .chat-main
+      .chat-main__group-info
+      .chat-main__message-list
+      .chat-main__message-form
