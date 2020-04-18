@@ -1,0 +1,36 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info-left
+      .chat-gruop-name test
+      .chat-group-member Member : name
+    .chat-main__group-info-right Edit
+    %a{:href => "#"}
+
+  .chat-main__message-list
+    .message
+      .message-info
+        %p.message-info-talker masa
+        %p.message-info-date 2020/4/16
+      %p.message-text おはよう
+
+    .message
+      .message-info
+        %p.message-info-talker masa
+        %p.message-info-date 2020/4/16
+      %p.message-text こんにちは
+
+    .message
+      .message-info
+        %p.message-info-talker masa
+        %p.message-info-date 2020/4/16
+      %p.message-text ありがとう
+
+  .chat-main__message-form
+    %form.input-box_1
+      .input-box_2
+        %input.input-box_3
+        %label.input-box_4{:for => "message_image"}
+          %i.fa.fa-image
+          %input#message_image.image-file{:name => "message[image]", :type => "file"}
+
+      %input.send-box{:type => "submit", :value => "Send"}
