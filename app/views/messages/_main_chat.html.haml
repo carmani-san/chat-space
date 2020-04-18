@@ -1,36 +1,36 @@
 .chat-main
-  .chat-main__group-info
-    .chat-main__group-info-left
-      .chat-gruop-name test
-      .chat-group-member Member : name
-    .chat-main__group-info-right Edit
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group test
+      .main-header__left-box__member-list Member : name
+    .main-header__edit-btn Edit
     %a{:href => "#"}
 
-  .chat-main__message-list
+  .messages
     .message
-      .message-info
-        %p.message-info-talker masa
-        %p.message-info-date 2020/4/16
-      %p.message-text おはよう
+      .message__upper-info
+        %p.message-info__talker masa
+        %p.message-info__date 2020/4/16
+      %p.message__text おはよう
 
     .message
-      .message-info
-        %p.message-info-talker masa
-        %p.message-info-date 2020/4/16
-      %p.message-text こんにちは
+      .message__upper-info
+        %p.message-info__talker masa
+        %p.message-info__date 2020/4/16
+      %p.message__text おはよう
 
     .message
-      .message-info
-        %p.message-info-talker masa
-        %p.message-info-date 2020/4/16
-      %p.message-text ありがとう
-
-  .chat-main__message-form
-    %form.input-box_1
-      .input-box_2
-        %input.input-box_3
-        %label.input-box_4{:for => "message_image"}
+      .message__upper-info
+        %p.message-info__talker masa
+        %p.message-info__date 2020/4/16
+      %p.message__text おはよう
+  
+  .form
+    %form.new_message
+      .input-box
+        %input.input-box__text
+        %label.input-box__image{:for => "message_image"}
           %i.fa.fa-image
-          %input#message_image.image-file{:name => "message[image]", :type => "file"}
+          %input#message_image.input-box__image__file{:name => "message[image]", :type => "file"}
 
-      %input.send-box{:type => "submit", :value => "Send"}
+      %input.submit-btn{:type => "submit", :value => "Send"}
