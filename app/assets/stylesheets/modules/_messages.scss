@@ -40,11 +40,19 @@
 
         .left-icon{
           cursor: pointer;
+          .far.fa-edit {
+
+            color: #ffffff;
+          }
         }
 
         .right-icon{
           margin-left: 5px;
           cursor: pointer;
+          .fas.fa-cog {
+            
+            color: #ffffff;
+          }
         }
       }
     }

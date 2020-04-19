@@ -3,9 +3,10 @@
     .main-header__left-box
       .main-header__left-box__current-group test
       .main-header__left-box__member-list Member : name
-    .main-header__edit-btn Edit
-    %a{:href => "#"}
-
+    = link_to "#" do
+      .main-header__edit-btn 
+        Edit
+      
   .messages
     .message
       .message__upper-info
@@ -29,8 +30,8 @@
     %form.new_message
       .input-box
         %input.input-box__text
-        %label.input-box__image{:for => "message_image"}
+        %label.input-box__image{for: "message_image"}
           %i.fa.fa-image
-          %input#message_image.input-box__image__file{:name => "message[image]", :type => "file"}
+          %input#message_image.input-box__image__file{name: "message[image]", type: "file"}
 
-      %input.submit-btn{:type => "submit", :value => "Send"}
+      %input.submit-btn{type: "submit", value: "Send"}
