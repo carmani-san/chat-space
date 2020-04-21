@@ -63,3 +63,7 @@ gem 'devise-i18n-views'
 gem 'devise'
 
 gem 'pry-rails'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
