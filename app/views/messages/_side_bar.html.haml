@@ -11,10 +11,10 @@
             %i.fas.fa-cog
 
   .groups
-    - current_user.groups.each do |group__contents|
+    - current_user.groups.each do |group|
       .groups__contents
-        = link_to '#', class: "group" do
+        = link_to group_messages_path(group) do
           .groups__contents__name
-            = group__contents.name
+            = group.name
           .groups__contents__member 
-            メッセージはまだありません。
+            = group.show_last_message

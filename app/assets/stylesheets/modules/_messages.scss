@@ -58,10 +58,6 @@
     }
   }
   
-  .group{
-    color:white;
-    text-decoration: none;
-  }
   .groups {
     color: #ffffff;
     font-weight: bold;
@@ -76,12 +72,16 @@
       &__name {
         font-size: 15px;
         cursor: pointer;
+        color:  white;
+        text-decoration: none;
       }
 
       &__member {
         font-size: 11px;
         margin-top: 5px;
         cursor: pointer;
+        color:  white;
+        text-decoration: none;
       }
     }
   }
@@ -135,15 +135,16 @@
     height: calc(100vh - 190px);
     width: calc(100vw - 300px);
     padding: 35px 40px;
+    overflow: scroll;
 
     .message {
       padding-bottom: 46px;
 
-      &__upper-info {
+      .upper-message {
         display: flex;
         margin-bottom: 12px;
 
-        &__talker {
+        &__user-name {
           font-size: 16px;
           color: #333333;
         }
@@ -155,7 +156,7 @@
         }
       }
 
-      &__text {
+      .lower-message {
         font-size: 14px;
         color: #434A54;
       }
@@ -201,16 +202,15 @@
           }
         }
       }
-    }
-
-    .submit-btn {
-      background-color: #38aef0;
-      color: white;
-      height: 50px;
-      width: 100px;
-      padding: 0 30px;
-      margin-left: 15px;
-      cursor: pointer;
+      .submit-btn {
+        background-color: #38aef0;
+        color: white;
+        height: 50px;
+        width: 100px;
+        padding: 0 30px;
+        margin-left: 15px;
+        cursor: pointer;
+      }
     }
   }
 }
