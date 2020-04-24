@@ -18,7 +18,6 @@ $(function(){
          </div>
          <img src=${message.image} >
        </div>`
-     return html;
    } else {
      var html =
       `<div class="message">
