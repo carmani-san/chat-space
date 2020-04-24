@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  height: 100vh;
+  display: flex;
+}
 .side-bar {
   background-color: #ffffff;
   height: 100vh;
@@ -64,7 +68,6 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 20px 20px 0;
-    overflow: scroll;
   
     &__contents {
       margin-bottom: 40px;
@@ -100,7 +103,6 @@
     padding: 28px 40px 0 40px;
     display: flex;
     justify-content: space-between;
-    overflow: scroll;
 
     &__left-box {
       width: 0 auto;
