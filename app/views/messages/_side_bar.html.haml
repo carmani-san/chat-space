@@ -1,7 +1,8 @@
 .side-bar
   .side-header
     .side-header__box
-      .side-header__box__name masa
+      .side-header__box__name
+        = current_user.name
       %ul.side-header__box__icon
         %li.left-icon
           = link_to new_group_path do
