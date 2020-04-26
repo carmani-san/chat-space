@@ -15,12 +15,6 @@
   .messages
     = render @messages
 
-    -# .message
-    -#   .upper-message
-    -#     %p.upper-message__user-name
-    -#     %p.upper-message__date
-    -#   %p.lower-message
-      
   .form
     = form_for [@group, @message] do |f|
       .input-box
