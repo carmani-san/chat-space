@@ -76,7 +76,6 @@
         font-size: 15px;
         cursor: pointer;
         color:  white;
-        text-decoration: none;
       }
 
       &__member {
@@ -84,7 +83,6 @@
         margin-top: 5px;
         cursor: pointer;
         color:  white;
-        text-decoration: none;
       }
     }
   }
@@ -215,4 +213,8 @@
       }
     }
   }
+}
+
+a{
+  text-decoration: none;
 }
